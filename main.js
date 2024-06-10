@@ -9,6 +9,19 @@ function createDivs () {
 
 createDivs();
 
-// this is to check that the number of divs created is indeed 256
+// Check that the number of divs created is indeed 256
 let numb = container.children.length;
 console.log(numb);
+
+// set a class to all child divs of the parent div "container"
+
+const childDivs = container.children;
+console.log(childDivs);
+
+function setClassOfChildDiv () {
+    for(let i = 0; i < childDivs.length; i++) {
+        childDivs[i].className= "childDiv";
+    }
+}
+
+setClassOfChildDiv ();
