@@ -1,5 +1,11 @@
+.body {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 .container {
-    border: solid blue;
+    border: 10px solid black;
     height: 700px;
     width: 1000px;
     box-sizing: border-box;
@@ -8,7 +14,6 @@
 }
 
 .childDiv {
-    border: solid black;
     box-sizing: border-box;
     /* width and height calculated by taking 100% divided by the number of rows and columns (16) */
     width: 6.25%;
