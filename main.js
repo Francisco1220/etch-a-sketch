@@ -35,6 +35,8 @@ const body = document.querySelector("body")
 const btn = document.createElement("button");
 body.appendChild(btn);
 
+btn.textContent="Choose Grid Size"
+
 function getUserInput () {
     let userInput = prompt("Please enter the desired grid size (eg. '64' for a 64x64 grid)", "16");
     return userInput;
