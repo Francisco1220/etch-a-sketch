@@ -19,9 +19,7 @@
 .childDiv {
     box-sizing: border-box;
     /* width and height calculated by taking 100% divided by the number of rows and columns (16) */
-    width: 6.25%;
-    height: 6.25%;
-    border: solid grey;
+    border: solid rgb(217, 217, 217);
 }
 
 button {
