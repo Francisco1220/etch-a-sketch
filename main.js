@@ -15,12 +15,12 @@ console.log(numb);
 
 // set a class to all child divs of the parent div "container"
 
-const childDivs = container.children;
-console.log(childDivs);
+const childDivCollection = container.children;
+console.log(childDivCollection);
 
 function setClassOfChildDiv () {
-    for(let i = 0; i < childDivs.length; i++) {
-        childDivs[i].className= "childDiv";
+    for(let i = 0; i < childDivCollection.length; i++) {
+        childDivCollection[i].className= "childDiv";
     }
 }
 

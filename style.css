@@ -8,7 +8,6 @@
 }
 
 .childDiv {
-    border: solid black;
     box-sizing: border-box;
     /* width and height calculated by taking 100% divided by the number of rows and columns (16) */
     width: 6.25%;
