@@ -35,10 +35,10 @@ btn.addEventListener("click", () => {
     setClassOfChildDiv ();
     for (let i = 0; i < childDivCollection.length; i++) {
         childDivCollection[i].addEventListener("mouseover", (e) => {
-        e.target.style.backgroundColor= "rgb(211, 211, 211)";
+        e.target.style.backgroundColor= "rgb(153, 0, 0)";
         });
     }
-// set width and height of child div based on chosen grid size
+    // set width and height of child div based on chosen grid size
     for (let i = 0; i < childDivCollection.length; i++) {
         childDivCollection[i].style.width=`${100/gridSize}%`;
         childDivCollection[i].style.height=`${100/gridSize}%`;
