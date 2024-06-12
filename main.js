@@ -27,7 +27,7 @@ function setClassOfChildDiv () {
 setClassOfChildDiv ();
 
 for (let i = 0; i < childDivCollection.length; i++) {
-    childDivCollection[i].addEventListener("mouseover", (event) => {
-        event.target.style.backgroundColor= "yellow";
-    });
+    childDivCollection[i].addEventListener("mouseover", (e) => {
+    e.target.style.backgroundColor= "rgb(211, 211, 211)";
+});
 }
