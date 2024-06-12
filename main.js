@@ -16,7 +16,6 @@ console.log(numb);
 // set a class to all child divs of the parent div "container"
 
 const childDivCollection = container.children;
-console.log(childDivCollection);
 
 function setClassOfChildDiv () {
     for(let i = 0; i < childDivCollection.length; i++) {
@@ -35,3 +34,18 @@ for (let i = 0; i < childDivCollection.length; i++) {
 const body = document.querySelector("body")
 const btn = document.createElement("button");
 body.appendChild(btn);
+
+function getUserInput () {
+    let userInput = prompt("Please enter the desired grid size (eg. '64' for a 64x64 grid)", "16");
+    return userInput;
+};
+
+btn.addEventListener("click", () => {
+    userInput = getUserInput ();
+});
+
+// STEPS to complete STEP 4 of project
+// 1. User clicks button
+// 2. prompt asks user for their desired grid size (eg. "64" for 64x64 grid)
+// 3. existing grid is removed
+// 4. new grid is generated (in the same total space as before so that you have a new sketchpad)
