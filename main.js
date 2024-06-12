@@ -29,5 +29,9 @@ setClassOfChildDiv ();
 for (let i = 0; i < childDivCollection.length; i++) {
     childDivCollection[i].addEventListener("mouseover", (e) => {
     e.target.style.backgroundColor= "rgb(211, 211, 211)";
-});
+    });
 }
+
+const body = document.querySelector("body")
+const btn = document.createElement("button");
+body.appendChild(btn);
