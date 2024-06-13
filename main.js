@@ -25,13 +25,19 @@ btn.addEventListener("click", () => {
     // existing grid is removed here by using the replaceChildren() method
      container.replaceChildren();
      let gridSize = getUserInput ();
-     function createDivs (gridSize) {
-        for(let i = 0; i < gridSize * gridSize; i++) {
-            const newDiv = document.createElement("div");
-            container.appendChild(newDiv);
+     if (gridSize > 100) {
+        alert("Number too large. Please choose a smaller number");
+    } else if (isNaN(gridSize) == true) {
+        alert("Please enter a number");
+    } else {
+        function createDivs (gridSize) {
+            for(let i = 0; i < gridSize * gridSize; i++) {
+                const newDiv = document.createElement("div");
+                container.appendChild(newDiv);
+            }
         }
+        createDivs(gridSize);
     }
-    createDivs(gridSize);
     setClassOfChildDiv ();
     for (let i = 0; i < childDivCollection.length; i++) {
         childDivCollection[i].addEventListener("mouseover", (e) => {
