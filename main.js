@@ -15,6 +15,10 @@ const btn = document.createElement("button");
 body.appendChild(btn);
 
 btn.textContent="Choose Grid Size";
+const clearBtn = document.createElement("button");
+body.appendChild(clearBtn);
+
+clearBtn.textContent="Clear";
 
 function getUserInput () {
     let userInput= prompt("Please enter the desired grid size (eg. '64' for a 64x64 grid)", "16");
@@ -49,4 +53,8 @@ btn.addEventListener("click", () => {
         childDivCollection[i].style.width=`${100/gridSize}%`;
         childDivCollection[i].style.height=`${100/gridSize}%`;
     }
+});
+
+clearBtn.addEventListener("click", () => {
+    container.replaceChildren();
 });
