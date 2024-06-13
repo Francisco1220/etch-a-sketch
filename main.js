@@ -55,6 +55,22 @@ btn.addEventListener("click", () => {
     }
 });
 
-clearBtn.addEventListener("click", () => {
+clearBtn.addEventListener("click", (event) => {
     container.replaceChildren();
+});
+
+btn.addEventListener("mouseover", (event) => {
+    event.target.style.backgroundColor="rgba(255, 215, 0, 0.7)";
+})
+
+btn.addEventListener("mouseout", () => {
+    event.target.style.backgroundColor="rgb(255, 215, 0)"
+});
+
+clearBtn.addEventListener("mouseover", (event) => {
+    event.target.style.backgroundColor="rgba(255, 215, 0, 0.7)";
+})
+
+clearBtn.addEventListener("mouseout", () => {
+    event.target.style.backgroundColor="rgb(255, 215, 0)";
 });

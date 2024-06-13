@@ -26,10 +26,9 @@ button {
     width: 130px;
     height: 40px;
     order: -1;
-    align-self: flex-start;
+    align-self: center;
     background-color: rgb(255, 215, 0);
     border: none;
     border-radius: 5px;
     font-size: 15px;
-    margin-top: 10px;
 }
