@@ -28,7 +28,7 @@ btn.addEventListener("click", () => {
      if (gridSize > 100) {
         alert("Number too large. Please choose a smaller number");
     } else if (isNaN(gridSize) == true) {
-        alert("Please enter a number");
+        alert("Not a number. Please choose a number");
     } else {
         function createDivs (gridSize) {
             for(let i = 0; i < gridSize * gridSize; i++) {
@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
     setClassOfChildDiv ();
     for (let i = 0; i < childDivCollection.length; i++) {
         childDivCollection[i].addEventListener("mouseover", (e) => {
-        e.target.style.backgroundColor= "rgb(0, 0, 0)";
+        e.target.style.backgroundColor= "rgba(0, 0, 0, 0.6)";
         });
     }
     // set width and height of child div based on chosen grid size
